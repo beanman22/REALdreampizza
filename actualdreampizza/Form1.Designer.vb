@@ -25,10 +25,10 @@ Partial Class Form1
         Me.ChkDelivery = New System.Windows.Forms.CheckBox()
         Me.LblDelivery = New System.Windows.Forms.Label()
         Me.LblTotal = New System.Windows.Forms.Label()
+        Me.NudQty12 = New System.Windows.Forms.NumericUpDown()
+        Me.NudQty11 = New System.Windows.Forms.NumericUpDown()
         Me.NudQty10 = New System.Windows.Forms.NumericUpDown()
         Me.NudQty9 = New System.Windows.Forms.NumericUpDown()
-        Me.NudQty8 = New System.Windows.Forms.NumericUpDown()
-        Me.NudQty7 = New System.Windows.Forms.NumericUpDown()
         Me.NudQty6 = New System.Windows.Forms.NumericUpDown()
         Me.NudQty3 = New System.Windows.Forms.NumericUpDown()
         Me.NudQty2 = New System.Windows.Forms.NumericUpDown()
@@ -39,14 +39,14 @@ Partial Class Form1
         Me.LblQty = New System.Windows.Forms.Label()
         Me.LblPrice = New System.Windows.Forms.Label()
         Me.LblPizzaName = New System.Windows.Forms.Label()
+        Me.LblSubtotal12 = New System.Windows.Forms.Label()
         Me.LblSubtotal10 = New System.Windows.Forms.Label()
-        Me.LblSubtotal8 = New System.Windows.Forms.Label()
+        Me.LblSubtotal11 = New System.Windows.Forms.Label()
         Me.LblSubtotal9 = New System.Windows.Forms.Label()
-        Me.LblSubtotal7 = New System.Windows.Forms.Label()
+        Me.LblPrice12 = New System.Windows.Forms.Label()
         Me.LblPrice10 = New System.Windows.Forms.Label()
-        Me.LblPrice8 = New System.Windows.Forms.Label()
+        Me.LblPrice11 = New System.Windows.Forms.Label()
         Me.LblPrice9 = New System.Windows.Forms.Label()
-        Me.LblPrice7 = New System.Windows.Forms.Label()
         Me.LblSubtotal3 = New System.Windows.Forms.Label()
         Me.LblSubtotal2 = New System.Windows.Forms.Label()
         Me.LblSubtotal4 = New System.Windows.Forms.Label()
@@ -61,15 +61,15 @@ Partial Class Form1
         Me.LblPrice1 = New System.Windows.Forms.Label()
         Me.LblGrange = New System.Windows.Forms.Label()
         Me.LblSrange = New System.Windows.Forms.Label()
+        Me.LblPizza12 = New System.Windows.Forms.Label()
         Me.LblPizza10 = New System.Windows.Forms.Label()
-        Me.LblPizza8 = New System.Windows.Forms.Label()
-        Me.LblPizza9 = New System.Windows.Forms.Label()
+        Me.LblPizza11 = New System.Windows.Forms.Label()
         Me.LblPizza3 = New System.Windows.Forms.Label()
         Me.LblPizza2 = New System.Windows.Forms.Label()
         Me.LblPizza4 = New System.Windows.Forms.Label()
         Me.LblPizza5 = New System.Windows.Forms.Label()
         Me.LblPizza6 = New System.Windows.Forms.Label()
-        Me.LblPizza7 = New System.Windows.Forms.Label()
+        Me.LblPizza9 = New System.Windows.Forms.Label()
         Me.LblPizza1 = New System.Windows.Forms.Label()
         Me.LblDivider = New System.Windows.Forms.Label()
         Me.TxtAddress = New System.Windows.Forms.TextBox()
@@ -90,16 +90,26 @@ Partial Class Form1
         Me.LblCity = New System.Windows.Forms.Label()
         Me.LblSuburb = New System.Windows.Forms.Label()
         Me.LblCode = New System.Windows.Forms.Label()
+        Me.NudQty8 = New System.Windows.Forms.NumericUpDown()
+        Me.LblSubtotal8 = New System.Windows.Forms.Label()
+        Me.LblPrice8 = New System.Windows.Forms.Label()
+        Me.LblPizza8 = New System.Windows.Forms.Label()
+        Me.NudQty7 = New System.Windows.Forms.NumericUpDown()
+        Me.LblSubtotal7 = New System.Windows.Forms.Label()
+        Me.LblQty7 = New System.Windows.Forms.Label()
+        Me.LblPizza7 = New System.Windows.Forms.Label()
+        CType(Me.NudQty12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NudQty11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NudQty8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NudQty7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NudQty8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NudQty7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ChkDelivery
@@ -118,7 +128,7 @@ Partial Class Form1
         '
         Me.LblDelivery.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblDelivery.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblDelivery.Location = New System.Drawing.Point(897, 640)
+        Me.LblDelivery.Location = New System.Drawing.Point(897, 692)
         Me.LblDelivery.Name = "LblDelivery"
         Me.LblDelivery.Size = New System.Drawing.Size(180, 30)
         Me.LblDelivery.TabIndex = 127
@@ -128,53 +138,53 @@ Partial Class Form1
         Me.LblTotal.AutoSize = True
         Me.LblTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 27.75!, System.Drawing.FontStyle.Bold)
         Me.LblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblTotal.Location = New System.Drawing.Point(889, 661)
+        Me.LblTotal.Location = New System.Drawing.Point(893, 714)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(211, 50)
         Me.LblTotal.TabIndex = 126
         Me.LblTotal.Text = "total: $0.00"
         '
+        'NudQty12
+        '
+        Me.NudQty12.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.NudQty12.Location = New System.Drawing.Point(910, 654)
+        Me.NudQty12.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
+        Me.NudQty12.Name = "NudQty12"
+        Me.NudQty12.Size = New System.Drawing.Size(68, 29)
+        Me.NudQty12.TabIndex = 125
+        '
+        'NudQty11
+        '
+        Me.NudQty11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.NudQty11.Location = New System.Drawing.Point(910, 605)
+        Me.NudQty11.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
+        Me.NudQty11.Name = "NudQty11"
+        Me.NudQty11.Size = New System.Drawing.Size(68, 29)
+        Me.NudQty11.TabIndex = 124
+        '
         'NudQty10
         '
         Me.NudQty10.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.NudQty10.Location = New System.Drawing.Point(908, 589)
-        Me.NudQty10.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty10.Location = New System.Drawing.Point(910, 553)
+        Me.NudQty10.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty10.Name = "NudQty10"
         Me.NudQty10.Size = New System.Drawing.Size(68, 29)
-        Me.NudQty10.TabIndex = 125
+        Me.NudQty10.TabIndex = 123
         '
         'NudQty9
         '
         Me.NudQty9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.NudQty9.Location = New System.Drawing.Point(908, 540)
-        Me.NudQty9.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty9.Location = New System.Drawing.Point(910, 504)
+        Me.NudQty9.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty9.Name = "NudQty9"
         Me.NudQty9.Size = New System.Drawing.Size(68, 29)
-        Me.NudQty9.TabIndex = 124
-        '
-        'NudQty8
-        '
-        Me.NudQty8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.NudQty8.Location = New System.Drawing.Point(908, 488)
-        Me.NudQty8.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
-        Me.NudQty8.Name = "NudQty8"
-        Me.NudQty8.Size = New System.Drawing.Size(68, 29)
-        Me.NudQty8.TabIndex = 123
-        '
-        'NudQty7
-        '
-        Me.NudQty7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.NudQty7.Location = New System.Drawing.Point(908, 439)
-        Me.NudQty7.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
-        Me.NudQty7.Name = "NudQty7"
-        Me.NudQty7.Size = New System.Drawing.Size(68, 29)
-        Me.NudQty7.TabIndex = 122
+        Me.NudQty9.TabIndex = 122
         '
         'NudQty6
         '
         Me.NudQty6.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.NudQty6.Location = New System.Drawing.Point(908, 346)
-        Me.NudQty6.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty6.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty6.Name = "NudQty6"
         Me.NudQty6.Size = New System.Drawing.Size(68, 29)
         Me.NudQty6.TabIndex = 121
@@ -183,7 +193,7 @@ Partial Class Form1
         '
         Me.NudQty3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.NudQty3.Location = New System.Drawing.Point(908, 204)
-        Me.NudQty3.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty3.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty3.Name = "NudQty3"
         Me.NudQty3.Size = New System.Drawing.Size(68, 29)
         Me.NudQty3.TabIndex = 120
@@ -192,7 +202,7 @@ Partial Class Form1
         '
         Me.NudQty2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.NudQty2.Location = New System.Drawing.Point(908, 159)
-        Me.NudQty2.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty2.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty2.Name = "NudQty2"
         Me.NudQty2.Size = New System.Drawing.Size(68, 29)
         Me.NudQty2.TabIndex = 119
@@ -201,7 +211,7 @@ Partial Class Form1
         '
         Me.NudQty4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.NudQty4.Location = New System.Drawing.Point(908, 249)
-        Me.NudQty4.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty4.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty4.Name = "NudQty4"
         Me.NudQty4.Size = New System.Drawing.Size(68, 29)
         Me.NudQty4.TabIndex = 118
@@ -210,7 +220,7 @@ Partial Class Form1
         '
         Me.NudQty5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.NudQty5.Location = New System.Drawing.Point(908, 297)
-        Me.NudQty5.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty5.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty5.Name = "NudQty5"
         Me.NudQty5.Size = New System.Drawing.Size(68, 29)
         Me.NudQty5.TabIndex = 117
@@ -219,7 +229,7 @@ Partial Class Form1
         '
         Me.NudQty1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.NudQty1.Location = New System.Drawing.Point(908, 108)
-        Me.NudQty1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NudQty1.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.NudQty1.Name = "NudQty1"
         Me.NudQty1.Size = New System.Drawing.Size(68, 29)
         Me.NudQty1.TabIndex = 116
@@ -272,93 +282,93 @@ Partial Class Form1
         Me.LblPizzaName.TabIndex = 79
         Me.LblPizzaName.Text = "pizza"
         '
+        'LblSubtotal12
+        '
+        Me.LblSubtotal12.AutoSize = True
+        Me.LblSubtotal12.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblSubtotal12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblSubtotal12.Location = New System.Drawing.Point(1012, 653)
+        Me.LblSubtotal12.Name = "LblSubtotal12"
+        Me.LblSubtotal12.Size = New System.Drawing.Size(61, 25)
+        Me.LblSubtotal12.TabIndex = 114
+        Me.LblSubtotal12.Text = "$0.00"
+        '
         'LblSubtotal10
         '
         Me.LblSubtotal10.AutoSize = True
         Me.LblSubtotal10.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblSubtotal10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSubtotal10.Location = New System.Drawing.Point(1010, 588)
+        Me.LblSubtotal10.Location = New System.Drawing.Point(1012, 554)
         Me.LblSubtotal10.Name = "LblSubtotal10"
         Me.LblSubtotal10.Size = New System.Drawing.Size(61, 25)
-        Me.LblSubtotal10.TabIndex = 114
+        Me.LblSubtotal10.TabIndex = 113
         Me.LblSubtotal10.Text = "$0.00"
         '
-        'LblSubtotal8
+        'LblSubtotal11
         '
-        Me.LblSubtotal8.AutoSize = True
-        Me.LblSubtotal8.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblSubtotal8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSubtotal8.Location = New System.Drawing.Point(1010, 489)
-        Me.LblSubtotal8.Name = "LblSubtotal8"
-        Me.LblSubtotal8.Size = New System.Drawing.Size(61, 25)
-        Me.LblSubtotal8.TabIndex = 113
-        Me.LblSubtotal8.Text = "$0.00"
+        Me.LblSubtotal11.AutoSize = True
+        Me.LblSubtotal11.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblSubtotal11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblSubtotal11.Location = New System.Drawing.Point(1012, 601)
+        Me.LblSubtotal11.Name = "LblSubtotal11"
+        Me.LblSubtotal11.Size = New System.Drawing.Size(61, 25)
+        Me.LblSubtotal11.TabIndex = 112
+        Me.LblSubtotal11.Text = "$0.00"
         '
         'LblSubtotal9
         '
         Me.LblSubtotal9.AutoSize = True
         Me.LblSubtotal9.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblSubtotal9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSubtotal9.Location = New System.Drawing.Point(1010, 536)
+        Me.LblSubtotal9.Location = New System.Drawing.Point(1012, 504)
         Me.LblSubtotal9.Name = "LblSubtotal9"
         Me.LblSubtotal9.Size = New System.Drawing.Size(61, 25)
-        Me.LblSubtotal9.TabIndex = 112
+        Me.LblSubtotal9.TabIndex = 111
         Me.LblSubtotal9.Text = "$0.00"
         '
-        'LblSubtotal7
+        'LblPrice12
         '
-        Me.LblSubtotal7.AutoSize = True
-        Me.LblSubtotal7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblSubtotal7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSubtotal7.Location = New System.Drawing.Point(1010, 439)
-        Me.LblSubtotal7.Name = "LblSubtotal7"
-        Me.LblSubtotal7.Size = New System.Drawing.Size(61, 25)
-        Me.LblSubtotal7.TabIndex = 111
-        Me.LblSubtotal7.Text = "$0.00"
+        Me.LblPrice12.AutoSize = True
+        Me.LblPrice12.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPrice12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPrice12.Location = New System.Drawing.Point(824, 654)
+        Me.LblPrice12.Name = "LblPrice12"
+        Me.LblPrice12.Size = New System.Drawing.Size(69, 25)
+        Me.LblPrice12.TabIndex = 110
+        Me.LblPrice12.Text = "$14.50"
         '
         'LblPrice10
         '
         Me.LblPrice10.AutoSize = True
         Me.LblPrice10.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblPrice10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPrice10.Location = New System.Drawing.Point(822, 589)
+        Me.LblPrice10.Location = New System.Drawing.Point(824, 555)
         Me.LblPrice10.Name = "LblPrice10"
         Me.LblPrice10.Size = New System.Drawing.Size(69, 25)
-        Me.LblPrice10.TabIndex = 110
+        Me.LblPrice10.TabIndex = 109
         Me.LblPrice10.Text = "$14.50"
         '
-        'LblPrice8
+        'LblPrice11
         '
-        Me.LblPrice8.AutoSize = True
-        Me.LblPrice8.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblPrice8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPrice8.Location = New System.Drawing.Point(822, 490)
-        Me.LblPrice8.Name = "LblPrice8"
-        Me.LblPrice8.Size = New System.Drawing.Size(69, 25)
-        Me.LblPrice8.TabIndex = 109
-        Me.LblPrice8.Text = "$14.50"
+        Me.LblPrice11.AutoSize = True
+        Me.LblPrice11.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPrice11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPrice11.Location = New System.Drawing.Point(824, 601)
+        Me.LblPrice11.Name = "LblPrice11"
+        Me.LblPrice11.Size = New System.Drawing.Size(69, 25)
+        Me.LblPrice11.TabIndex = 108
+        Me.LblPrice11.Text = "$14.50"
         '
         'LblPrice9
         '
         Me.LblPrice9.AutoSize = True
         Me.LblPrice9.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblPrice9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPrice9.Location = New System.Drawing.Point(822, 536)
+        Me.LblPrice9.Location = New System.Drawing.Point(824, 505)
         Me.LblPrice9.Name = "LblPrice9"
         Me.LblPrice9.Size = New System.Drawing.Size(69, 25)
-        Me.LblPrice9.TabIndex = 108
+        Me.LblPrice9.TabIndex = 107
         Me.LblPrice9.Text = "$14.50"
-        '
-        'LblPrice7
-        '
-        Me.LblPrice7.AutoSize = True
-        Me.LblPrice7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblPrice7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPrice7.Location = New System.Drawing.Point(822, 440)
-        Me.LblPrice7.Name = "LblPrice7"
-        Me.LblPrice7.Size = New System.Drawing.Size(69, 25)
-        Me.LblPrice7.TabIndex = 107
-        Me.LblPrice7.Text = "$14.50"
         '
         'LblSubtotal3
         '
@@ -475,7 +485,7 @@ Partial Class Form1
         Me.LblPrice6.AutoSize = True
         Me.LblPrice6.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblPrice6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPrice6.Location = New System.Drawing.Point(822, 349)
+        Me.LblPrice6.Location = New System.Drawing.Point(823, 345)
         Me.LblPrice6.Name = "LblPrice6"
         Me.LblPrice6.Size = New System.Drawing.Size(60, 25)
         Me.LblPrice6.TabIndex = 96
@@ -499,7 +509,7 @@ Partial Class Form1
         Me.LblGrange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LblGrange.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblGrange.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblGrange.Location = New System.Drawing.Point(518, 393)
+        Me.LblGrange.Location = New System.Drawing.Point(518, 421)
         Me.LblGrange.Name = "LblGrange"
         Me.LblGrange.Size = New System.Drawing.Size(180, 34)
         Me.LblGrange.TabIndex = 94
@@ -518,38 +528,38 @@ Partial Class Form1
         Me.LblSrange.TabIndex = 93
         Me.LblSrange.Text = "standard range"
         '
+        'LblPizza12
+        '
+        Me.LblPizza12.AutoSize = True
+        Me.LblPizza12.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPizza12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPizza12.Location = New System.Drawing.Point(520, 653)
+        Me.LblPizza12.Name = "LblPizza12"
+        Me.LblPizza12.Size = New System.Drawing.Size(56, 25)
+        Me.LblPizza12.TabIndex = 92
+        Me.LblPizza12.Text = "pizza"
+        '
         'LblPizza10
         '
         Me.LblPizza10.AutoSize = True
         Me.LblPizza10.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LblPizza10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPizza10.Location = New System.Drawing.Point(518, 588)
+        Me.LblPizza10.Location = New System.Drawing.Point(520, 554)
         Me.LblPizza10.Name = "LblPizza10"
         Me.LblPizza10.Size = New System.Drawing.Size(56, 25)
-        Me.LblPizza10.TabIndex = 92
+        Me.LblPizza10.TabIndex = 91
         Me.LblPizza10.Text = "pizza"
         '
-        'LblPizza8
+        'LblPizza11
         '
-        Me.LblPizza8.AutoSize = True
-        Me.LblPizza8.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblPizza8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPizza8.Location = New System.Drawing.Point(518, 489)
-        Me.LblPizza8.Name = "LblPizza8"
-        Me.LblPizza8.Size = New System.Drawing.Size(56, 25)
-        Me.LblPizza8.TabIndex = 91
-        Me.LblPizza8.Text = "pizza"
-        '
-        'LblPizza9
-        '
-        Me.LblPizza9.AutoSize = True
-        Me.LblPizza9.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblPizza9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPizza9.Location = New System.Drawing.Point(518, 536)
-        Me.LblPizza9.Name = "LblPizza9"
-        Me.LblPizza9.Size = New System.Drawing.Size(56, 25)
-        Me.LblPizza9.TabIndex = 90
-        Me.LblPizza9.Text = "pizza"
+        Me.LblPizza11.AutoSize = True
+        Me.LblPizza11.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPizza11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPizza11.Location = New System.Drawing.Point(520, 601)
+        Me.LblPizza11.Name = "LblPizza11"
+        Me.LblPizza11.Size = New System.Drawing.Size(56, 25)
+        Me.LblPizza11.TabIndex = 90
+        Me.LblPizza11.Text = "pizza"
         '
         'LblPizza3
         '
@@ -606,16 +616,16 @@ Partial Class Form1
         Me.LblPizza6.TabIndex = 85
         Me.LblPizza6.Text = "pizza"
         '
-        'LblPizza7
+        'LblPizza9
         '
-        Me.LblPizza7.AutoSize = True
-        Me.LblPizza7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.LblPizza7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPizza7.Location = New System.Drawing.Point(518, 439)
-        Me.LblPizza7.Name = "LblPizza7"
-        Me.LblPizza7.Size = New System.Drawing.Size(56, 25)
-        Me.LblPizza7.TabIndex = 84
-        Me.LblPizza7.Text = "pizza"
+        Me.LblPizza9.AutoSize = True
+        Me.LblPizza9.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPizza9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPizza9.Location = New System.Drawing.Point(520, 504)
+        Me.LblPizza9.Name = "LblPizza9"
+        Me.LblPizza9.Size = New System.Drawing.Size(56, 25)
+        Me.LblPizza9.TabIndex = 84
+        Me.LblPizza9.Text = "pizza"
         '
         'LblPizza1
         '
@@ -634,14 +644,14 @@ Partial Class Form1
         Me.LblDivider.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LblDivider.Location = New System.Drawing.Point(489, 1)
         Me.LblDivider.Name = "LblDivider"
-        Me.LblDivider.Size = New System.Drawing.Size(9, 725)
+        Me.LblDivider.Size = New System.Drawing.Size(10, 763)
         Me.LblDivider.TabIndex = 78
         Me.LblDivider.Text = "Label1"
         '
         'TxtAddress
         '
         Me.TxtAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtAddress.Location = New System.Drawing.Point(34, 388)
+        Me.TxtAddress.Location = New System.Drawing.Point(27, 436)
         Me.TxtAddress.Name = "TxtAddress"
         Me.TxtAddress.Size = New System.Drawing.Size(419, 35)
         Me.TxtAddress.TabIndex = 77
@@ -675,7 +685,7 @@ Partial Class Form1
         Me.BtnNext.BackColor = System.Drawing.Color.LawnGreen
         Me.BtnNext.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, System.Drawing.FontStyle.Bold)
         Me.BtnNext.ForeColor = System.Drawing.Color.Black
-        Me.BtnNext.Location = New System.Drawing.Point(192, 631)
+        Me.BtnNext.Location = New System.Drawing.Point(192, 661)
         Me.BtnNext.Name = "BtnNext"
         Me.BtnNext.Size = New System.Drawing.Size(140, 74)
         Me.BtnNext.TabIndex = 73
@@ -686,7 +696,7 @@ Partial Class Form1
         '
         Me.BtnExit.BackColor = System.Drawing.Color.Red
         Me.BtnExit.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.BtnExit.Location = New System.Drawing.Point(28, 631)
+        Me.BtnExit.Location = New System.Drawing.Point(28, 661)
         Me.BtnExit.Name = "BtnExit"
         Me.BtnExit.Size = New System.Drawing.Size(137, 74)
         Me.BtnExit.TabIndex = 72
@@ -720,7 +730,7 @@ Partial Class Form1
         Me.LblAddress.AutoSize = True
         Me.LblAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblAddress.Location = New System.Drawing.Point(35, 353)
+        Me.LblAddress.Location = New System.Drawing.Point(28, 401)
         Me.LblAddress.Name = "LblAddress"
         Me.LblAddress.Size = New System.Drawing.Size(100, 32)
         Me.LblAddress.TabIndex = 69
@@ -760,7 +770,7 @@ Partial Class Form1
         'TxtCity
         '
         Me.TxtCity.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtCity.Location = New System.Drawing.Point(34, 469)
+        Me.TxtCity.Location = New System.Drawing.Point(27, 517)
         Me.TxtCity.Name = "TxtCity"
         Me.TxtCity.Size = New System.Drawing.Size(419, 35)
         Me.TxtCity.TabIndex = 129
@@ -768,7 +778,7 @@ Partial Class Form1
         'TxtCode
         '
         Me.TxtCode.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtCode.Location = New System.Drawing.Point(298, 552)
+        Me.TxtCode.Location = New System.Drawing.Point(291, 600)
         Me.TxtCode.Name = "TxtCode"
         Me.TxtCode.Size = New System.Drawing.Size(155, 35)
         Me.TxtCode.TabIndex = 130
@@ -776,7 +786,7 @@ Partial Class Form1
         'TxtSuburb
         '
         Me.TxtSuburb.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtSuburb.Location = New System.Drawing.Point(33, 552)
+        Me.TxtSuburb.Location = New System.Drawing.Point(26, 600)
         Me.TxtSuburb.Name = "TxtSuburb"
         Me.TxtSuburb.Size = New System.Drawing.Size(255, 35)
         Me.TxtSuburb.TabIndex = 131
@@ -786,7 +796,7 @@ Partial Class Form1
         Me.LblCity.AutoSize = True
         Me.LblCity.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblCity.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblCity.Location = New System.Drawing.Point(34, 433)
+        Me.LblCity.Location = New System.Drawing.Point(27, 481)
         Me.LblCity.Name = "LblCity"
         Me.LblCity.Size = New System.Drawing.Size(137, 32)
         Me.LblCity.TabIndex = 132
@@ -797,7 +807,7 @@ Partial Class Form1
         Me.LblSuburb.AutoSize = True
         Me.LblSuburb.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblSuburb.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSuburb.Location = New System.Drawing.Point(35, 517)
+        Me.LblSuburb.Location = New System.Drawing.Point(28, 565)
         Me.LblSuburb.Name = "LblSuburb"
         Me.LblSuburb.Size = New System.Drawing.Size(92, 32)
         Me.LblSuburb.TabIndex = 133
@@ -808,18 +818,110 @@ Partial Class Form1
         Me.LblCode.AutoSize = True
         Me.LblCode.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblCode.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblCode.Location = New System.Drawing.Point(302, 517)
+        Me.LblCode.Location = New System.Drawing.Point(295, 565)
         Me.LblCode.Name = "LblCode"
         Me.LblCode.Size = New System.Drawing.Size(120, 32)
         Me.LblCode.TabIndex = 134
         Me.LblCode.Text = "post code"
+        '
+        'NudQty8
+        '
+        Me.NudQty8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.NudQty8.Location = New System.Drawing.Point(910, 455)
+        Me.NudQty8.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
+        Me.NudQty8.Name = "NudQty8"
+        Me.NudQty8.Size = New System.Drawing.Size(68, 29)
+        Me.NudQty8.TabIndex = 138
+        '
+        'LblSubtotal8
+        '
+        Me.LblSubtotal8.AutoSize = True
+        Me.LblSubtotal8.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblSubtotal8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblSubtotal8.Location = New System.Drawing.Point(1012, 455)
+        Me.LblSubtotal8.Name = "LblSubtotal8"
+        Me.LblSubtotal8.Size = New System.Drawing.Size(61, 25)
+        Me.LblSubtotal8.TabIndex = 137
+        Me.LblSubtotal8.Text = "$0.00"
+        '
+        'LblPrice8
+        '
+        Me.LblPrice8.AutoSize = True
+        Me.LblPrice8.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPrice8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPrice8.Location = New System.Drawing.Point(824, 456)
+        Me.LblPrice8.Name = "LblPrice8"
+        Me.LblPrice8.Size = New System.Drawing.Size(69, 25)
+        Me.LblPrice8.TabIndex = 136
+        Me.LblPrice8.Text = "$14.50"
+        '
+        'LblPizza8
+        '
+        Me.LblPizza8.AutoSize = True
+        Me.LblPizza8.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPizza8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPizza8.Location = New System.Drawing.Point(520, 455)
+        Me.LblPizza8.Name = "LblPizza8"
+        Me.LblPizza8.Size = New System.Drawing.Size(56, 25)
+        Me.LblPizza8.TabIndex = 135
+        Me.LblPizza8.Text = "pizza"
+        '
+        'NudQty7
+        '
+        Me.NudQty7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.NudQty7.Location = New System.Drawing.Point(908, 390)
+        Me.NudQty7.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
+        Me.NudQty7.Name = "NudQty7"
+        Me.NudQty7.Size = New System.Drawing.Size(68, 29)
+        Me.NudQty7.TabIndex = 142
+        '
+        'LblSubtotal7
+        '
+        Me.LblSubtotal7.AutoSize = True
+        Me.LblSubtotal7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblSubtotal7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblSubtotal7.Location = New System.Drawing.Point(1010, 392)
+        Me.LblSubtotal7.Name = "LblSubtotal7"
+        Me.LblSubtotal7.Size = New System.Drawing.Size(61, 25)
+        Me.LblSubtotal7.TabIndex = 141
+        Me.LblSubtotal7.Text = "$0.00"
+        '
+        'LblQty7
+        '
+        Me.LblQty7.AutoSize = True
+        Me.LblQty7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblQty7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblQty7.Location = New System.Drawing.Point(822, 393)
+        Me.LblQty7.Name = "LblQty7"
+        Me.LblQty7.Size = New System.Drawing.Size(60, 25)
+        Me.LblQty7.TabIndex = 140
+        Me.LblQty7.Text = "$7.50"
+        '
+        'LblPizza7
+        '
+        Me.LblPizza7.AutoSize = True
+        Me.LblPizza7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LblPizza7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LblPizza7.Location = New System.Drawing.Point(518, 386)
+        Me.LblPizza7.Name = "LblPizza7"
+        Me.LblPizza7.Size = New System.Drawing.Size(56, 25)
+        Me.LblPizza7.TabIndex = 139
+        Me.LblPizza7.Text = "pizza"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1117, 728)
+        Me.ClientSize = New System.Drawing.Size(1117, 763)
+        Me.Controls.Add(Me.NudQty7)
+        Me.Controls.Add(Me.LblSubtotal7)
+        Me.Controls.Add(Me.LblQty7)
+        Me.Controls.Add(Me.LblPizza7)
+        Me.Controls.Add(Me.NudQty8)
+        Me.Controls.Add(Me.LblSubtotal8)
+        Me.Controls.Add(Me.LblPrice8)
+        Me.Controls.Add(Me.LblPizza8)
         Me.Controls.Add(Me.LblCode)
         Me.Controls.Add(Me.LblSuburb)
         Me.Controls.Add(Me.LblCity)
@@ -829,10 +931,10 @@ Partial Class Form1
         Me.Controls.Add(Me.ChkDelivery)
         Me.Controls.Add(Me.LblDelivery)
         Me.Controls.Add(Me.LblTotal)
+        Me.Controls.Add(Me.NudQty12)
+        Me.Controls.Add(Me.NudQty11)
         Me.Controls.Add(Me.NudQty10)
         Me.Controls.Add(Me.NudQty9)
-        Me.Controls.Add(Me.NudQty8)
-        Me.Controls.Add(Me.NudQty7)
         Me.Controls.Add(Me.NudQty6)
         Me.Controls.Add(Me.NudQty3)
         Me.Controls.Add(Me.NudQty2)
@@ -843,14 +945,14 @@ Partial Class Form1
         Me.Controls.Add(Me.LblQty)
         Me.Controls.Add(Me.LblPrice)
         Me.Controls.Add(Me.LblPizzaName)
+        Me.Controls.Add(Me.LblSubtotal12)
         Me.Controls.Add(Me.LblSubtotal10)
-        Me.Controls.Add(Me.LblSubtotal8)
+        Me.Controls.Add(Me.LblSubtotal11)
         Me.Controls.Add(Me.LblSubtotal9)
-        Me.Controls.Add(Me.LblSubtotal7)
+        Me.Controls.Add(Me.LblPrice12)
         Me.Controls.Add(Me.LblPrice10)
-        Me.Controls.Add(Me.LblPrice8)
+        Me.Controls.Add(Me.LblPrice11)
         Me.Controls.Add(Me.LblPrice9)
-        Me.Controls.Add(Me.LblPrice7)
         Me.Controls.Add(Me.LblSubtotal3)
         Me.Controls.Add(Me.LblSubtotal2)
         Me.Controls.Add(Me.LblSubtotal4)
@@ -865,15 +967,15 @@ Partial Class Form1
         Me.Controls.Add(Me.LblPrice1)
         Me.Controls.Add(Me.LblGrange)
         Me.Controls.Add(Me.LblSrange)
+        Me.Controls.Add(Me.LblPizza12)
         Me.Controls.Add(Me.LblPizza10)
-        Me.Controls.Add(Me.LblPizza8)
-        Me.Controls.Add(Me.LblPizza9)
+        Me.Controls.Add(Me.LblPizza11)
         Me.Controls.Add(Me.LblPizza3)
         Me.Controls.Add(Me.LblPizza2)
         Me.Controls.Add(Me.LblPizza4)
         Me.Controls.Add(Me.LblPizza5)
         Me.Controls.Add(Me.LblPizza6)
-        Me.Controls.Add(Me.LblPizza7)
+        Me.Controls.Add(Me.LblPizza9)
         Me.Controls.Add(Me.LblPizza1)
         Me.Controls.Add(Me.LblDivider)
         Me.Controls.Add(Me.TxtAddress)
@@ -890,16 +992,18 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.NudQty12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NudQty11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NudQty8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NudQty7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudQty1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NudQty8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NudQty7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -908,10 +1012,10 @@ Partial Class Form1
     Friend WithEvents ChkDelivery As CheckBox
     Friend WithEvents LblDelivery As Label
     Friend WithEvents LblTotal As Label
+    Friend WithEvents NudQty12 As NumericUpDown
+    Friend WithEvents NudQty11 As NumericUpDown
     Friend WithEvents NudQty10 As NumericUpDown
     Friend WithEvents NudQty9 As NumericUpDown
-    Friend WithEvents NudQty8 As NumericUpDown
-    Friend WithEvents NudQty7 As NumericUpDown
     Friend WithEvents NudQty6 As NumericUpDown
     Friend WithEvents NudQty3 As NumericUpDown
     Friend WithEvents NudQty2 As NumericUpDown
@@ -922,14 +1026,14 @@ Partial Class Form1
     Friend WithEvents LblQty As Label
     Friend WithEvents LblPrice As Label
     Friend WithEvents LblPizzaName As Label
+    Friend WithEvents LblSubtotal12 As Label
     Friend WithEvents LblSubtotal10 As Label
-    Friend WithEvents LblSubtotal8 As Label
+    Friend WithEvents LblSubtotal11 As Label
     Friend WithEvents LblSubtotal9 As Label
-    Friend WithEvents LblSubtotal7 As Label
+    Friend WithEvents LblPrice12 As Label
     Friend WithEvents LblPrice10 As Label
-    Friend WithEvents LblPrice8 As Label
+    Friend WithEvents LblPrice11 As Label
     Friend WithEvents LblPrice9 As Label
-    Friend WithEvents LblPrice7 As Label
     Friend WithEvents LblSubtotal3 As Label
     Friend WithEvents LblSubtotal2 As Label
     Friend WithEvents LblSubtotal4 As Label
@@ -944,15 +1048,15 @@ Partial Class Form1
     Friend WithEvents LblPrice1 As Label
     Friend WithEvents LblGrange As Label
     Friend WithEvents LblSrange As Label
+    Friend WithEvents LblPizza12 As Label
     Friend WithEvents LblPizza10 As Label
-    Friend WithEvents LblPizza8 As Label
-    Friend WithEvents LblPizza9 As Label
+    Friend WithEvents LblPizza11 As Label
     Friend WithEvents LblPizza3 As Label
     Friend WithEvents LblPizza2 As Label
     Friend WithEvents LblPizza4 As Label
     Friend WithEvents LblPizza5 As Label
     Friend WithEvents LblPizza6 As Label
-    Friend WithEvents LblPizza7 As Label
+    Friend WithEvents LblPizza9 As Label
     Friend WithEvents LblPizza1 As Label
     Friend WithEvents LblDivider As Label
     Friend WithEvents TxtAddress As TextBox
@@ -978,4 +1082,12 @@ Partial Class Form1
     Friend WithEvents LblCity As Label
     Friend WithEvents LblSuburb As Label
     Friend WithEvents LblCode As Label
+    Friend WithEvents NudQty8 As NumericUpDown
+    Friend WithEvents LblSubtotal8 As Label
+    Friend WithEvents LblPrice8 As Label
+    Friend WithEvents LblPizza8 As Label
+    Friend WithEvents NudQty7 As NumericUpDown
+    Friend WithEvents LblSubtotal7 As Label
+    Friend WithEvents LblQty7 As Label
+    Friend WithEvents LblPizza7 As Label
 End Class
