@@ -655,6 +655,7 @@ Partial Class Form1
         Me.TxtAddress.Name = "TxtAddress"
         Me.TxtAddress.Size = New System.Drawing.Size(419, 35)
         Me.TxtAddress.TabIndex = 77
+        Me.TxtAddress.Visible = False
         '
         'TxtMobile
         '
@@ -735,6 +736,7 @@ Partial Class Form1
         Me.LblAddress.Size = New System.Drawing.Size(100, 32)
         Me.LblAddress.TabIndex = 69
         Me.LblAddress.Text = "Address"
+        Me.LblAddress.Visible = False
         '
         'LblFname
         '
@@ -774,6 +776,7 @@ Partial Class Form1
         Me.TxtCity.Name = "TxtCity"
         Me.TxtCity.Size = New System.Drawing.Size(419, 35)
         Me.TxtCity.TabIndex = 129
+        Me.TxtCity.Visible = False
         '
         'TxtCode
         '
@@ -782,6 +785,7 @@ Partial Class Form1
         Me.TxtCode.Name = "TxtCode"
         Me.TxtCode.Size = New System.Drawing.Size(155, 35)
         Me.TxtCode.TabIndex = 130
+        Me.TxtCode.Visible = False
         '
         'TxtSuburb
         '
@@ -790,6 +794,7 @@ Partial Class Form1
         Me.TxtSuburb.Name = "TxtSuburb"
         Me.TxtSuburb.Size = New System.Drawing.Size(255, 35)
         Me.TxtSuburb.TabIndex = 131
+        Me.TxtSuburb.Visible = False
         '
         'LblCity
         '
@@ -801,6 +806,7 @@ Partial Class Form1
         Me.LblCity.Size = New System.Drawing.Size(137, 32)
         Me.LblCity.TabIndex = 132
         Me.LblCity.Text = "Town / City"
+        Me.LblCity.Visible = False
         '
         'LblSuburb
         '
@@ -812,6 +818,7 @@ Partial Class Form1
         Me.LblSuburb.Size = New System.Drawing.Size(92, 32)
         Me.LblSuburb.TabIndex = 133
         Me.LblSuburb.Text = "Suburb"
+        Me.LblSuburb.Visible = False
         '
         'LblCode
         '
@@ -823,6 +830,7 @@ Partial Class Form1
         Me.LblCode.Size = New System.Drawing.Size(120, 32)
         Me.LblCode.TabIndex = 134
         Me.LblCode.Text = "post code"
+        Me.LblCode.Visible = False
         '
         'NudQty8
         '

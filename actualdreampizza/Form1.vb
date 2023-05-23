@@ -11,27 +11,31 @@ Public Class Form1
     Public delivery As Boolean 'declares variable for the delivery option
 
     Public details(7) As String 'declares a one dimensional array for the customer details
-    Public pizza(9, 3) As String 'declares 2d array for pizza details - name, individual cost, quantity
+    Public pizza(11, 3) As String 'declares 2d array for pizza details - name,  individual cost, quantity, subtotal cost
     Public totals(11) As Decimal 'declares 1d array for final addition of pizza cost and delivery cost
 
     Public upperb As Integer
     Public lowerb As Integer
-    Private Sub NudQty1_ValueChanged(sender As Object, e As EventArgs) Handles NudQty1.ValueChanged, NudQty2.ValueChanged, NudQty3.ValueChanged, NudQty4.ValueChanged, NudQty5.ValueChanged, NudQty6.ValueChanged, NudQty9.ValueChanged, NudQty10.ValueChanged, NudQty11.ValueChanged, NudQty12.ValueChanged
+    Private Sub NudQty1_ValueChanged(sender As Object, e As EventArgs) Handles NudQty1.ValueChanged, NudQty2.ValueChanged, NudQty3.ValueChanged, NudQty4.ValueChanged, NudQty5.ValueChanged, NudQty6.ValueChanged, NudQty7.ValueChanged, NudQty8.ValueChanged, NudQty9.ValueChanged, NudQty10.ValueChanged, NudQty11.ValueChanged, NudQty12.ValueChanged
 
         upperb = UBound(pizza)
         lowerb = LBound(pizza)
 
+        pizza(0, 1) = 7.5
+        pizza(1, 1) = 7.5
+        pizza(2, 1) = 7.5
+        pizza(3, 1) = 7.5
+        pizza(4, 1) = 7.5
+        pizza(5, 1) = 7.5
+        pizza(6, 1) = 7.5
+        pizza(7, 1) = 7.5
+        pizza(8, 1) = 7.5
+        pizza(9, 1) = 7.5
+        pizza(10, 1) = 7.5
+        pizza(11, 1) = 7.5
+        'test code
 
-        For i = lowerb To upperb
-            pizza(i, )
-
-
-        Next
-
-
-
-
-
+        pizza(0, 2) = NudQty1.Value
         pizza(1, 2) = NudQty2.Value
         pizza(2, 2) = NudQty3.Value
         pizza(3, 2) = NudQty4.Value
@@ -41,17 +45,14 @@ Public Class Form1
         pizza(7, 2) = NudQty8.Value
         pizza(8, 2) = NudQty9.Value
         pizza(9, 2) = NudQty10.Value
+        pizza(10, 2) = NudQty11.Value
+        pizza(11, 2) = NudQty12.Value
 
-        pizza(0, 3) = pizza(0, 2) * STANDARDPRICE
-        pizza(1, 3) = pizza(1, 2) * STANDARDPRICE
-        pizza(2, 3) = pizza(2, 2) * STANDARDPRICE
-        pizza(3, 3) = pizza(3, 2) * STANDARDPRICE
-        pizza(4, 3) = pizza(4, 2) * STANDARDPRICE
-        pizza(5, 3) = pizza(5, 2) * STANDARDPRICE
-        pizza(6, 3) = pizza(6, 2) * STANDARDPRICE
-        pizza(7, 3) = pizza(7, 2) * STANDARDPRICE
-        pizza(8, 3) = pizza(8, 2) * STANDARDPRICE
-        pizza(9, 3) = pizza(9, 2) * STANDARDPRICE
+
+        For i = 0 To 11
+            pizza(i, 3) = Val(pizza(i, 2)) * Val(pizza(i, 1)) 'calculates the subtotal price of each pizza flavour
+        Next
+
 
         LblSubtotal1.Text = FormatCurrency(pizza(0, 3))
         LblSubtotal2.Text = FormatCurrency(pizza(1, 3))
@@ -65,12 +66,14 @@ Public Class Form1
         LblSubtotal10.Text = FormatCurrency(pizza(9, 3))
 
 
-        total = 0
+
+        total = 0 'sets total to 0
         For i = lowerb To upperb
             total = total + pizza(i, 3) 'iterates through the third coloum of the 2d array
             LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
-        Next i
+        Next
+    End Sub
+    Private Sub ChkDelivery_CheckedChanged(sender As Object, e As EventArgs) Handles ChkDelivery.CheckedChanged
 
-   
     End Sub
 End Class
