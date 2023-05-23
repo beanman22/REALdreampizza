@@ -75,5 +75,33 @@ Public Class Form1
     End Sub
     Private Sub ChkDelivery_CheckedChanged(sender As Object, e As EventArgs) Handles ChkDelivery.CheckedChanged
 
+
+        If ChkDelivery.Checked = True Then 'checks if delivery box is checked
+            LblDelivery.Show() 'shows lbldelivery
+            LblAddress.Show() 'shows lbladdress
+            LblCode.Show() 'shows lblcode
+            LblCity.Show() 'shows lbltown
+            LblSuburb.Show() 'shows lblsuburb
+            TxtAddress.Show() 'shows txtaddress
+            TxtCity.Show() 'shows txtcity
+            TxtCode.Show() 'shows txtpost
+            TxtSuburb.Show() 'txtsuburb
+            subtotals(10) = 3 'makes the tenth value in the subtotals array equal to 3
+        Else 'if box is not checked
+            LblDelivery.Hide() 'hides lbldelivery
+            LblAddress.Hide() 'hides lbladdress
+            LblCode.Hide() 'hides lblcode
+            LblTown.Hide() 'hides lbltown
+            LblSuburb.Hide() 'hides lblsuburb
+            TxtAddress.Hide() 'hides txtaddress
+            TxtCity.Hide() 'hides txtcity
+            TxtPost.Hide() 'hides txtpost
+            TxtSuburb.Hide() 'hides txtsuburb
+            subtotals(10) = 0 'makes the tenth value in the subtotals array equal to zero
+        End If 'ends the process
+
+        total = subtotals.Sum() 'calculates the sum of all values in the array and inputs it into the variable for the total
+        LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
+
     End Sub
 End Class
