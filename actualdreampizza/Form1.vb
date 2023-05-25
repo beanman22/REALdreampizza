@@ -24,19 +24,42 @@ Public Class Form1
         upperb = UBound(pizza)
         lowerb = LBound(pizza)
 
-        Dim filePath As String = "pizzaprices.txt" ' gets filepath for pizzaprices.txt
+        Dim pricesPath As String = "pizzaprices.txt" ' gets filepath for pizzaprices.txt
+        Dim prices() As String = File.ReadAllLines(pricesPath) ' Read all lines from the text file into an array
+        Dim namePath As String = "pizzanames.txt" ' gets filepath for pizzanames.txt
+        Dim names() As String = File.ReadAllLines(namePath) ' Read all lines from the text file into an array
 
-        ' Read all lines from the text file into an array
-        Dim prices() As String = File.ReadAllLines(filePath)
 
-        'outputs each line from pizzaprices.txt and stores it int the prices array
-        Dim dataArray(prices.Length - 1) As String
+        Dim PricesArray(prices.Length - 1) As String   'outputs each line from pizzaprices.txt and stores it in the prices array
         For i As Integer = 0 To prices.Length - 1
-            dataArray(i) = prices(i)
+            PricesArray(i) = prices(i)
         Next
         For i = lowerb To upperb
             pizza(i, 1) = prices(i) 'inputs the values from the prices array into the pizza array
         Next
+
+
+        Dim NamesArray(names.Length - 1) As String   'outputs each line from pizzaprices.txt and stores it in the prices array
+        For i As Integer = 0 To names.Length - 1
+            NamesArray(i) = names(i)
+        Next
+        For i = lowerb To upperb
+            pizza(i, 0) = names(i) 'inputs the values from the names array into the pizza array
+        Next
+
+        'sets the pizza names labels to the names stored in the array
+        LblPizza1.Text = pizza(0, 0)
+        LblPizza2.Text = pizza(1, 0)
+        LblPizza3.Text = pizza(2, 0)
+        LblPizza4.Text = pizza(3, 0)
+        LblPizza5.Text = pizza(4, 0)
+        LblPizza6.Text = pizza(5, 0)
+        LblPizza7.Text = pizza(6, 0)
+        LblPizza8.Text = pizza(7, 0)
+        LblPizza9.Text = pizza(8, 0)
+        LblPizza10.Text = pizza(9, 0)
+        LblPizza11.Text = pizza(10, 0)
+        LblPizza12.Text = pizza(11, 0)
 
 
     End Sub
@@ -75,7 +98,8 @@ Public Class Form1
         LblSubtotal8.Text = FormatCurrency(pizza(7, 3))
         LblSubtotal9.Text = FormatCurrency(pizza(8, 3))
         LblSubtotal10.Text = FormatCurrency(pizza(9, 3))
-
+        LblSubtotal11.Text = FormatCurrency(pizza(10, 3))
+        LblSubtotal12.Text = FormatCurrency(pizza(11, 3))
 
         If ChkDelivery.Checked = True Then
             total = 3 'sets total to 3
@@ -126,8 +150,5 @@ Public Class Form1
                 LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
             Next
         End If 'ends the process
-
-
-
     End Sub
 End Class
