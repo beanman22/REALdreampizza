@@ -1,4 +1,6 @@
-﻿Imports System.Reflection.Metadata
+﻿Imports System.IO
+Imports System.Reflection.Metadata
+Imports System.Resources.ResXFileRef
 Imports System.Windows
 Imports System.Windows.Forms.DataFormats
 
@@ -18,23 +20,33 @@ Public Class Form1
     Public lowerb As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'defines upper and lowers values for pizza array
+        upperb = UBound(pizza)
+        lowerb = LBound(pizza)
 
-        Dim file As String = "C:\path\to\file\textfile.txt"
-        Dim quoteArray As New ArrayList
-        FileOpen(1, file, OpenMode.Input)
-        Do While Not EOF(1)
-            quoteArray.Add(LineInput(1))
-        Loop
-        FileClose(1)
-        Console.WriteLine(quoteArray)
-        Console.ReadLine()
+        Dim filePath As String = "pizzaprices.txt" ' gets filepath for pizzaprices.txt
+
+        ' Read all lines from the text file into an array
+        Dim prices() As String = File.ReadAllLines(filePath)
+
+        'outputs each line from pizzaprices.txt and stores it int the prices array
+        Dim dataArray(prices.Length - 1) As String
+        For i As Integer = 0 To prices.Length - 1
+            dataArray(i) = prices(i)
+        Next
+        For i = lowerb To upperb
+            pizza(i, 1) = prices(i) 'inputs the values from the prices array into the pizza array
+        Next
+
 
     End Sub
     Private Sub NudQty1_ValueChanged(sender As Object, e As EventArgs) Handles NudQty1.ValueChanged, NudQty2.ValueChanged, NudQty3.ValueChanged, NudQty4.ValueChanged, NudQty5.ValueChanged, NudQty6.ValueChanged, NudQty7.ValueChanged, NudQty8.ValueChanged, NudQty9.ValueChanged, NudQty10.ValueChanged, NudQty11.ValueChanged, NudQty12.ValueChanged
 
+        'defines upper and lowers values for pizza array
         upperb = UBound(pizza)
         lowerb = LBound(pizza)
 
+        'pulls data from NudQty objects and inputs it into pizza array
         pizza(0, 2) = NudQty1.Value
         pizza(1, 2) = NudQty2.Value
         pizza(2, 2) = NudQty3.Value
@@ -48,12 +60,11 @@ Public Class Form1
         pizza(10, 2) = NudQty11.Value
         pizza(11, 2) = NudQty12.Value
 
-
         For i = 0 To 11
             pizza(i, 3) = Val(pizza(i, 2)) * Val(pizza(i, 1)) 'calculates the subtotal price of each pizza flavour
         Next
 
-
+        'displays subtotal prices
         LblSubtotal1.Text = FormatCurrency(pizza(0, 3))
         LblSubtotal2.Text = FormatCurrency(pizza(1, 3))
         LblSubtotal3.Text = FormatCurrency(pizza(2, 3))
@@ -73,10 +84,10 @@ Public Class Form1
                 LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
             Next
         Else
-            total = 0
+            total = 0 'sets total to zero
             For i = lowerb To upperb
                 total = total + pizza(i, 3) 'iterates through the third coloum of the 2d array
-                LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency\
+                LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
             Next
         End If
 
