@@ -126,13 +126,15 @@ Partial Class Form1
         '
         'LblDelivery
         '
+        Me.LblDelivery.AutoSize = True
         Me.LblDelivery.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDelivery.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LblDelivery.Location = New System.Drawing.Point(905, 705)
         Me.LblDelivery.Name = "LblDelivery"
-        Me.LblDelivery.Size = New System.Drawing.Size(180, 30)
+        Me.LblDelivery.Size = New System.Drawing.Size(124, 30)
         Me.LblDelivery.TabIndex = 127
         Me.LblDelivery.Text = "delivery: $3"
+        Me.LblDelivery.Visible = False
         '
         'LblTotal
         '

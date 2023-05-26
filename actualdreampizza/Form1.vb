@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿Imports System.ComponentModel
+Imports System.IO
 Imports System.Reflection.Metadata
 Imports System.Resources.ResXFileRef
 Imports System.Windows
@@ -129,6 +130,7 @@ Public Class Form1
             TxtCity.Show() 'shows txtcity
             TxtCode.Show() 'shows txtpost
             TxtSuburb.Show() 'txtsuburb
+            LblDelivery.Show() 'shows lbldelivery
             total = 3 'sets total to 3
             For i = lowerb To upperb
                 total = total + pizza(i, 3) 'iterates through the third coloum of the 2d array
@@ -144,11 +146,16 @@ Public Class Form1
             TxtCity.Hide() 'hides txtcity
             TxtCode.Hide() 'hides txtpost
             TxtSuburb.Hide() 'hides txtsuburb
+            LblDelivery.Hide() 'hides lbldelivery
             total = 0 'sets total to 0
             For i = lowerb To upperb
                 total = total + pizza(i, 3) 'iterates through the third coloum of the 2d array
                 LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
             Next
         End If 'ends the process
+    End Sub
+
+    Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
+        warningclose.Show()
     End Sub
 End Class
