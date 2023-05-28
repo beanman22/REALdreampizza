@@ -97,7 +97,7 @@ Partial Class Form1
         Me.LblSubtotal7 = New System.Windows.Forms.Label()
         Me.LblQty7 = New System.Windows.Forms.Label()
         Me.LblPizza7 = New System.Windows.Forms.Label()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.TxtMobile = New System.Windows.Forms.MaskedTextBox()
         CType(Me.NudQty12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -909,14 +909,14 @@ Partial Class Form1
         Me.LblPizza7.TabIndex = 139
         Me.LblPizza7.Text = "pizza"
         '
-        'MaskedTextBox1
+        'TxtMobile
         '
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(28, 270)
-        Me.MaskedTextBox1.Mask = "(999) 000-0000"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(255, 35)
-        Me.MaskedTextBox1.TabIndex = 143
+        Me.TxtMobile.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.TxtMobile.Location = New System.Drawing.Point(28, 270)
+        Me.TxtMobile.Mask = "(999) 000-0000"
+        Me.TxtMobile.Name = "TxtMobile"
+        Me.TxtMobile.Size = New System.Drawing.Size(255, 35)
+        Me.TxtMobile.TabIndex = 143
         '
         'Form1
         '
@@ -924,7 +924,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1144, 775)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.TxtMobile)
         Me.Controls.Add(Me.NudQty7)
         Me.Controls.Add(Me.LblSubtotal7)
         Me.Controls.Add(Me.LblQty7)
@@ -1095,5 +1095,5 @@ Partial Class Form1
     Friend WithEvents LblSubtotal7 As Label
     Friend WithEvents LblQty7 As Label
     Friend WithEvents LblPizza7 As Label
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents TxtMobile As MaskedTextBox
 End Class

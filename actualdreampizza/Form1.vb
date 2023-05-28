@@ -13,7 +13,7 @@ Public Class Form1
     Public total As Decimal = 0 'declares variable for the total cost of all pizzas
     Public delivery As Boolean 'declares variable for the delivery option
 
-    Public details(7) As String 'declares a one dimensional array for the customer details
+    Public details(6) As String 'declares a one dimensional array for the customer details
     Public pizza(11, 3) As String 'declares 2d array for pizza details - name,  individual cost, quantity, subtotal cost
     Public totals(11) As Decimal 'declares 1d array for final addition of pizza cost and delivery cost
 
@@ -156,10 +156,21 @@ Public Class Form1
     End Sub
 
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
-        warningclose.Show()
+        'displays a messagebox asking if the user wants to quit the program, with two dialoge options, If the user choses no nothing happens, if the user choses yes the application closes.
+        If MessageBox.Show("Are you sure you want" + vbCrLf + "to exit the program?" + vbCrLf + "changes will not be saved", "Exit Program", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Application.Exit()
+        End If
     End Sub
-
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
+
+        details(0) = TxtFname.Text
+        details(1) = TxtLname.Text
+        details(2) = TxtMobile.Text
+        details(3) = TxtAddress.Text
+        details(4) = TxtCity.Text
+        details(5) = TxtSuburb.Text
+        details(6) = TxtCode.Text
+
         recieptform.Show()
         Me.Hide()
     End Sub

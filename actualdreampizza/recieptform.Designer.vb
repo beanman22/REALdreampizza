@@ -54,6 +54,7 @@ Partial Class recieptform
         '
         'LblReceipt
         '
+        Me.LblReceipt.Font = New System.Drawing.Font("Source Code Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblReceipt.Location = New System.Drawing.Point(9, 13)
         Me.LblReceipt.Name = "LblReceipt"
         Me.LblReceipt.Size = New System.Drawing.Size(509, 737)
