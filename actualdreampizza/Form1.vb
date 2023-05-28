@@ -158,4 +158,9 @@ Public Class Form1
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
         warningclose.Show()
     End Sub
+
+    Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
+        recieptform.Show()
+        Me.Hide()
+    End Sub
 End Class
