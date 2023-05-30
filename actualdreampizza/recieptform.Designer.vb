@@ -54,17 +54,18 @@ Partial Class recieptform
         '
         'LblReceipt
         '
-        Me.LblReceipt.Font = New System.Drawing.Font("Source Code Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblReceipt.Font = New System.Drawing.Font("Lucida Console", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblReceipt.Location = New System.Drawing.Point(9, 13)
         Me.LblReceipt.Name = "LblReceipt"
-        Me.LblReceipt.Size = New System.Drawing.Size(509, 737)
+        Me.LblReceipt.Size = New System.Drawing.Size(419, 737)
         Me.LblReceipt.TabIndex = 3
+        Me.LblReceipt.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'recieptform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(534, 805)
+        Me.ClientSize = New System.Drawing.Size(440, 805)
         Me.Controls.Add(Me.LblReceipt)
         Me.Controls.Add(Me.BtnYes)
         Me.Controls.Add(Me.BtnCancel)
