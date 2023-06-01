@@ -121,6 +121,7 @@ Public Class Form1
 
 
         If ChkDelivery.Checked = True Then 'checks if delivery box is checked
+            delivery = True
             LblDelivery.Show() 'shows lbldelivery
             LblAddress.Show() 'shows lbladdress
             LblCode.Show() 'shows lblcode
@@ -137,6 +138,7 @@ Public Class Form1
                 LblTotal.Text = "total: " + FormatCurrency(total) 'displays the total and formats it as currency
             Next
         Else 'if box is not checked
+            delivery = False
             LblDelivery.Hide() 'hides lbldelivery
             LblAddress.Hide() 'hides lbladdress
             LblCode.Hide() 'hides lblcode
