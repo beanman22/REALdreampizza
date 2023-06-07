@@ -4,7 +4,7 @@ Imports System.Runtime.Remoting
 Public Class recieptform
     Private Sub recieptform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        LblReceipt.Text += "Rotorua Dream Pizza LTD" & vbCrLf
+        LblReceipt.Text += "Rotorua Dream Pizza LTD" & vbCrLf 'adds 
         Dim storedetails As String
         storedetails = My.Computer.FileSystem.ReadAllText("storedetails.txt")
         LblReceipt.Text += storedetails & vbCrLf & vbCrLf & "---------------------------------" & vbCrLf
@@ -13,12 +13,20 @@ Public Class recieptform
 
         LblReceipt.Text += "CUSTOMER DETAILS:" & vbCrLf
         LblReceipt.Text += Form1.details(0) & " " & Form1.details(1) & vbCrLf & Form1.details(2)
-        LblReceipt.Text += vbCrLf & vbCrLf & "DELIVERY DETAILS:" & vbCrLf
 
 
-        For i = 3 To 6
-            LblReceipt.Text += Form1.details(i) & vbCrLf
-        Next
+
+
+        If Form1.delivery = True Then
+            LblReceipt.Text += vbCrLf & vbCrLf & "DELIVERY DETAILS:" & vbCrLf
+            For i = 3 To 6
+                LblReceipt.Text += Form1.details(i) & vbCrLf
+            Next
+        Else
+            LblReceipt.Text += vbCrLf
+        End If
+
+
 
         LblReceipt.Text += vbCrLf & "*********************************" & vbCrLf & vbCrLf
 
@@ -45,10 +53,6 @@ Public Class recieptform
 
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-        e.Graphics.DrawString(LblReceipt.Text, New Font("Arial", 12, FontStyle.Regular))
-
-
-
-
+        e.Graphics.DrawString(LblReceipt.Text, New Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20)
     End Sub
 End Class
