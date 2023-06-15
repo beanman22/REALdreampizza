@@ -15,8 +15,6 @@ Public Class recieptform
         LblReceipt.Text += Form1.details(0) & " " & Form1.details(1) & vbCrLf & Form1.details(2)
 
 
-
-
         If Form1.delivery = True Then
             LblReceipt.Text += vbCrLf & vbCrLf & "DELIVERY DETAILS:" & vbCrLf
             For i = 3 To 6
@@ -27,14 +25,16 @@ Public Class recieptform
         End If
 
 
-
         LblReceipt.Text += vbCrLf & "*********************************" & vbCrLf & vbCrLf
+
 
         For i = 0 To 11
             If Val(Form1.pizza(i, 2)) > 0 Then
                 LblReceipt.Text += Form1.pizza(i, 2) & "x   " & Form1.pizza(i, 0) & "     " & FormatCurrency(Form1.pizza(i, 3)) & vbCrLf
             End If
         Next
+
+
 
 
         LblReceipt.Text += vbCrLf & "*********************************" & vbCrLf & vbCrLf

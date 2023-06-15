@@ -165,15 +165,24 @@ Public Class Form1
     End Sub
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
 
-        details(0) = TxtFname.Text
-        details(1) = TxtLname.Text
-        details(2) = TxtMobile.Text
-        details(3) = TxtAddress.Text
-        details(4) = TxtCity.Text
-        details(5) = TxtSuburb.Text
-        details(6) = TxtCode.Text
+        If TxtFname.Text = "" Or TxtLname.Text = "" Or TxtMobile.Text = "" Then
+            MessageBox.Show("please input full name and phone number")
+        Else
 
-        recieptform.Show()
-        Me.Hide()
+            details(0) = TxtFname.Text
+            details(1) = TxtLname.Text
+            details(2) = TxtMobile.Text
+            details(3) = TxtAddress.Text
+            details(4) = TxtCity.Text
+            details(5) = TxtSuburb.Text
+            details(6) = TxtCode.Text
+
+            recieptform.Show()
+            Me.Hide()
+        End If
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+
     End Sub
 End Class

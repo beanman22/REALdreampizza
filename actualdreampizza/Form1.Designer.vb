@@ -110,6 +110,9 @@ Partial Class Form1
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         CType(Me.NudQty12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,7 +132,7 @@ Partial Class Form1
         Me.ChkDelivery.AutoSize = True
         Me.ChkDelivery.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.ChkDelivery.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ChkDelivery.Location = New System.Drawing.Point(24, 372)
+        Me.ChkDelivery.Location = New System.Drawing.Point(30, 344)
         Me.ChkDelivery.Name = "ChkDelivery"
         Me.ChkDelivery.Size = New System.Drawing.Size(252, 36)
         Me.ChkDelivery.TabIndex = 128
@@ -139,9 +142,10 @@ Partial Class Form1
         'LblDelivery
         '
         Me.LblDelivery.AutoSize = True
+        Me.LblDelivery.BackColor = System.Drawing.Color.Black
         Me.LblDelivery.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDelivery.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblDelivery.Location = New System.Drawing.Point(959, 766)
+        Me.LblDelivery.Location = New System.Drawing.Point(922, 820)
         Me.LblDelivery.Name = "LblDelivery"
         Me.LblDelivery.Size = New System.Drawing.Size(124, 30)
         Me.LblDelivery.TabIndex = 127
@@ -151,9 +155,10 @@ Partial Class Form1
         'LblTotal
         '
         Me.LblTotal.AutoSize = True
+        Me.LblTotal.BackColor = System.Drawing.Color.Black
         Me.LblTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblTotal.Location = New System.Drawing.Point(958, 796)
+        Me.LblTotal.Location = New System.Drawing.Point(921, 847)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(136, 32)
         Me.LblTotal.TabIndex = 126
@@ -255,7 +260,7 @@ Partial Class Form1
         Me.LblSubtotal.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.LblSubtotal.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblSubtotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSubtotal.Location = New System.Drawing.Point(999, 21)
+        Me.LblSubtotal.Location = New System.Drawing.Point(988, 21)
         Me.LblSubtotal.Name = "LblSubtotal"
         Me.LblSubtotal.Size = New System.Drawing.Size(106, 32)
         Me.LblSubtotal.TabIndex = 82
@@ -291,7 +296,7 @@ Partial Class Form1
         Me.LblPizzaName.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.LblPizzaName.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblPizzaName.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblPizzaName.Location = New System.Drawing.Point(529, 21)
+        Me.LblPizzaName.Location = New System.Drawing.Point(519, 21)
         Me.LblPizzaName.Name = "LblPizzaName"
         Me.LblPizzaName.Size = New System.Drawing.Size(69, 32)
         Me.LblPizzaName.TabIndex = 79
@@ -543,7 +548,7 @@ Partial Class Form1
         Me.LblGrange.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LblGrange.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblGrange.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblGrange.Location = New System.Drawing.Point(515, 453)
+        Me.LblGrange.Location = New System.Drawing.Point(510, 453)
         Me.LblGrange.Name = "LblGrange"
         Me.LblGrange.Size = New System.Drawing.Size(204, 38)
         Me.LblGrange.TabIndex = 94
@@ -555,7 +560,7 @@ Partial Class Form1
         Me.LblSrange.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LblSrange.Font = New System.Drawing.Font("Comic Sans MS", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblSrange.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSrange.Location = New System.Drawing.Point(518, 69)
+        Me.LblSrange.Location = New System.Drawing.Point(508, 70)
         Me.LblSrange.Name = "LblSrange"
         Me.LblSrange.Size = New System.Drawing.Size(215, 38)
         Me.LblSrange.TabIndex = 93
@@ -687,14 +692,14 @@ Partial Class Form1
         Me.LblDivider.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LblDivider.Location = New System.Drawing.Point(489, 1)
         Me.LblDivider.Name = "LblDivider"
-        Me.LblDivider.Size = New System.Drawing.Size(10, 837)
+        Me.LblDivider.Size = New System.Drawing.Size(10, 899)
         Me.LblDivider.TabIndex = 78
         Me.LblDivider.Text = "Label1"
         '
         'TxtAddress
         '
         Me.TxtAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtAddress.Location = New System.Drawing.Point(16, 531)
+        Me.TxtAddress.Location = New System.Drawing.Point(26, 453)
         Me.TxtAddress.Name = "TxtAddress"
         Me.TxtAddress.Size = New System.Drawing.Size(419, 35)
         Me.TxtAddress.TabIndex = 77
@@ -703,7 +708,7 @@ Partial Class Form1
         'TxtLname
         '
         Me.TxtLname.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtLname.Location = New System.Drawing.Point(20, 231)
+        Me.TxtLname.Location = New System.Drawing.Point(26, 203)
         Me.TxtLname.Name = "TxtLname"
         Me.TxtLname.Size = New System.Drawing.Size(417, 35)
         Me.TxtLname.TabIndex = 75
@@ -711,7 +716,7 @@ Partial Class Form1
         'TxtFname
         '
         Me.TxtFname.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.TxtFname.Location = New System.Drawing.Point(21, 150)
+        Me.TxtFname.Location = New System.Drawing.Point(27, 122)
         Me.TxtFname.Name = "TxtFname"
         Me.TxtFname.Size = New System.Drawing.Size(419, 35)
         Me.TxtFname.TabIndex = 74
@@ -721,7 +726,7 @@ Partial Class Form1
         Me.BtnNext.BackColor = System.Drawing.Color.OliveDrab
         Me.BtnNext.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, System.Drawing.FontStyle.Bold)
         Me.BtnNext.ForeColor = System.Drawing.Color.Black
-        Me.BtnNext.Location = New System.Drawing.Point(169, 757)
+        Me.BtnNext.Location = New System.Drawing.Point(184, 693)
         Me.BtnNext.Name = "BtnNext"
         Me.BtnNext.Size = New System.Drawing.Size(140, 59)
         Me.BtnNext.TabIndex = 73
@@ -732,7 +737,7 @@ Partial Class Form1
         '
         Me.BtnExit.BackColor = System.Drawing.Color.Brown
         Me.BtnExit.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.BtnExit.Location = New System.Drawing.Point(11, 757)
+        Me.BtnExit.Location = New System.Drawing.Point(26, 693)
         Me.BtnExit.Name = "BtnExit"
         Me.BtnExit.Size = New System.Drawing.Size(137, 59)
         Me.BtnExit.TabIndex = 72
@@ -744,7 +749,7 @@ Partial Class Form1
         Me.LblMobile.AutoSize = True
         Me.LblMobile.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblMobile.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblMobile.Location = New System.Drawing.Point(15, 278)
+        Me.LblMobile.Location = New System.Drawing.Point(21, 250)
         Me.LblMobile.Name = "LblMobile"
         Me.LblMobile.Size = New System.Drawing.Size(185, 32)
         Me.LblMobile.TabIndex = 71
@@ -755,7 +760,7 @@ Partial Class Form1
         Me.LblLname.AutoSize = True
         Me.LblLname.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblLname.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblLname.Location = New System.Drawing.Point(14, 198)
+        Me.LblLname.Location = New System.Drawing.Point(20, 170)
         Me.LblLname.Name = "LblLname"
         Me.LblLname.Size = New System.Drawing.Size(130, 32)
         Me.LblLname.TabIndex = 70
@@ -766,7 +771,7 @@ Partial Class Form1
         Me.LblAddress.AutoSize = True
         Me.LblAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblAddress.Location = New System.Drawing.Point(12, 498)
+        Me.LblAddress.Location = New System.Drawing.Point(22, 420)
         Me.LblAddress.Name = "LblAddress"
         Me.LblAddress.Size = New System.Drawing.Size(100, 32)
         Me.LblAddress.TabIndex = 69
@@ -778,7 +783,7 @@ Partial Class Form1
         Me.LblFname.AutoSize = True
         Me.LblFname.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblFname.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblFname.Location = New System.Drawing.Point(15, 117)
+        Me.LblFname.Location = New System.Drawing.Point(21, 89)
         Me.LblFname.Name = "LblFname"
         Me.LblFname.Size = New System.Drawing.Size(132, 32)
         Me.LblFname.TabIndex = 68
@@ -799,7 +804,7 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Condensed", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBox1.Location = New System.Drawing.Point(518, 16)
+        Me.TextBox1.Location = New System.Drawing.Point(513, 16)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(592, 46)
         Me.TextBox1.TabIndex = 115
@@ -807,7 +812,7 @@ Partial Class Form1
         'TxtCity
         '
         Me.TxtCity.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtCity.Location = New System.Drawing.Point(16, 612)
+        Me.TxtCity.Location = New System.Drawing.Point(26, 534)
         Me.TxtCity.Name = "TxtCity"
         Me.TxtCity.Size = New System.Drawing.Size(419, 35)
         Me.TxtCity.TabIndex = 129
@@ -816,7 +821,7 @@ Partial Class Form1
         'TxtCode
         '
         Me.TxtCode.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtCode.Location = New System.Drawing.Point(280, 695)
+        Me.TxtCode.Location = New System.Drawing.Point(290, 617)
         Me.TxtCode.Name = "TxtCode"
         Me.TxtCode.Size = New System.Drawing.Size(155, 35)
         Me.TxtCode.TabIndex = 130
@@ -825,7 +830,7 @@ Partial Class Form1
         'TxtSuburb
         '
         Me.TxtSuburb.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtSuburb.Location = New System.Drawing.Point(15, 695)
+        Me.TxtSuburb.Location = New System.Drawing.Point(25, 617)
         Me.TxtSuburb.Name = "TxtSuburb"
         Me.TxtSuburb.Size = New System.Drawing.Size(255, 35)
         Me.TxtSuburb.TabIndex = 131
@@ -836,7 +841,7 @@ Partial Class Form1
         Me.LblCity.AutoSize = True
         Me.LblCity.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblCity.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblCity.Location = New System.Drawing.Point(10, 579)
+        Me.LblCity.Location = New System.Drawing.Point(20, 501)
         Me.LblCity.Name = "LblCity"
         Me.LblCity.Size = New System.Drawing.Size(137, 32)
         Me.LblCity.TabIndex = 132
@@ -848,7 +853,7 @@ Partial Class Form1
         Me.LblSuburb.AutoSize = True
         Me.LblSuburb.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblSuburb.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblSuburb.Location = New System.Drawing.Point(10, 662)
+        Me.LblSuburb.Location = New System.Drawing.Point(20, 584)
         Me.LblSuburb.Name = "LblSuburb"
         Me.LblSuburb.Size = New System.Drawing.Size(92, 32)
         Me.LblSuburb.TabIndex = 133
@@ -860,7 +865,7 @@ Partial Class Form1
         Me.LblCode.AutoSize = True
         Me.LblCode.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold)
         Me.LblCode.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblCode.Location = New System.Drawing.Point(275, 659)
+        Me.LblCode.Location = New System.Drawing.Point(285, 581)
         Me.LblCode.Name = "LblCode"
         Me.LblCode.Size = New System.Drawing.Size(120, 32)
         Me.LblCode.TabIndex = 134
@@ -960,7 +965,7 @@ Partial Class Form1
         'TxtMobile
         '
         Me.TxtMobile.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.TxtMobile.Location = New System.Drawing.Point(21, 312)
+        Me.TxtMobile.Location = New System.Drawing.Point(27, 284)
         Me.TxtMobile.Mask = "(999) 000-0000"
         Me.TxtMobile.Name = "TxtMobile"
         Me.TxtMobile.Size = New System.Drawing.Size(255, 35)
@@ -989,6 +994,7 @@ Partial Class Form1
         Me.TextBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.TextBox4.Font = New System.Drawing.Font("Bahnschrift Condensed", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(513, 362)
+        Me.TextBox4.MaxLength = 50
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(592, 42)
         Me.TextBox4.TabIndex = 146
@@ -1074,12 +1080,43 @@ Partial Class Form1
         Me.TextBox13.Size = New System.Drawing.Size(592, 42)
         Me.TextBox13.TabIndex = 155
         '
+        'TextBox14
+        '
+        Me.TextBox14.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.TextBox14.Font = New System.Drawing.Font("Bahnschrift Condensed", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox14.Location = New System.Drawing.Point(913, 815)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(191, 71)
+        Me.TextBox14.TabIndex = 156
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(510, 763)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(244, 27)
+        Me.Label1.TabIndex = 158
+        Me.Label1.Text = "special order instructions"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(513, 791)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(377, 95)
+        Me.RichTextBox1.TabIndex = 157
+        Me.RichTextBox1.Text = ""
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1165, 837)
+        Me.ClientSize = New System.Drawing.Size(1165, 900)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.TxtMobile)
         Me.Controls.Add(Me.NudQty7)
         Me.Controls.Add(Me.LblSubtotal7)
@@ -1168,6 +1205,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.TextBox14)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -1276,4 +1314,7 @@ Partial Class Form1
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class
