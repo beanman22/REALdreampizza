@@ -165,9 +165,19 @@ Public Class Form1
     End Sub
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
 
+        Dim TrimmedTxtFname
+        Dim TrimmedTxtLname
+        Dim TrimmedTxtMobile
+        Dim TrimmedTxtAddress
+
+        TrimmedTxtFname = TxtFname.Text.Trim
+
+
+
+
         If TxtFname.Text = "" Or TxtLname.Text = "" Or TxtMobile.Text = "" Then
             MessageBox.Show("please input full name and phone number")
-        Else
+        ElseIf TxtMobile.Text Then
 
             details(0) = TxtFname.Text
             details(1) = TxtLname.Text

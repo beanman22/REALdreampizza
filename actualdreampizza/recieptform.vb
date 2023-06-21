@@ -30,7 +30,7 @@ Public Class recieptform
 
         For i = 0 To 11
             If Val(Form1.pizza(i, 2)) > 0 Then
-                LblReceipt.Text += Form1.pizza(i, 2) & "x   " & Form1.pizza(i, 0) & "     " & FormatCurrency(Form1.pizza(i, 3)) & vbCrLf
+                LblReceipt.Text += Form1.pizza(i, 2) & "x   " & Form1.pizza(i, 0) & "    " & FormatCurrency(Form1.pizza(i, 3)) & vbCrLf
             End If
         Next
 
