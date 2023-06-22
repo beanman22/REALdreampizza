@@ -165,30 +165,57 @@ Public Class Form1
     End Sub
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
 
-        Dim TrimmedTxtFname
-        Dim TrimmedTxtLname
-        Dim TrimmedTxtMobile
-        Dim TrimmedTxtAddress
+        Dim TrimmedTxtFname As String
+        Dim TrimmedTxtLname As String
+        Dim TrimmedTxtMobile As String
+        Dim TrimmedTxtAddress As String
+        Dim TrimmedTxtcity As String
+        Dim TrimmedTxtSuburb As String
+        Dim TrimmedTxtCode As String
 
+        TrimmedTxtLname = TxtLname.Text.Trim
         TrimmedTxtFname = TxtFname.Text.Trim
+        TrimmedTxtMobile = TxtFname.Text.Trim
+        TrimmedTxtAddress = TxtFname.Text.Trim
+        TrimmedTxtcity = TxtFname.Text.Trim
+        TrimmedTxtSuburb = TxtFname.Text.Trim
+        TrimmedTxtCode = TxtFname.Text.Trim
 
 
+        If delivery = False Then
+            If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Then
+                MessageBox.Show("please input full name and phone number")
 
+            ElseIf delivery = False Then
 
-        If TxtFname.Text = "" Or TxtLname.Text = "" Or TxtMobile.Text = "" Then
-            MessageBox.Show("please input full name and phone number")
-        ElseIf TxtMobile.Text Then
+                details(0) = TxtFname.Text
+                details(1) = TxtLname.Text
+                details(2) = TxtMobile.Text
+                details(3) = TxtAddress.Text
+                details(4) = TxtCity.Text
+                details(5) = TxtSuburb.Text
+                details(6) = TxtCode.Text
 
-            details(0) = TxtFname.Text
-            details(1) = TxtLname.Text
-            details(2) = TxtMobile.Text
-            details(3) = TxtAddress.Text
-            details(4) = TxtCity.Text
-            details(5) = TxtSuburb.Text
-            details(6) = TxtCode.Text
+                recieptform.Show()
+                Me.Hide()
+            End If
+        ElseIf delivery = True Then
+            If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Or TrimmedTxtAddress = "" Or TrimmedTxtcity = "" Or TrimmedTxtSuburb = "" Or TrimmedTxtCode = "" Then
+                MessageBox.Show("please input all customer and delivery details")
 
-            recieptform.Show()
-            Me.Hide()
+            ElseIf delivery = True Then
+
+                details(0) = TxtFname.Text
+                details(1) = TxtLname.Text
+                details(2) = TxtMobile.Text
+                details(3) = TxtAddress.Text
+                details(4) = TxtCity.Text
+                details(5) = TxtSuburb.Text
+                details(6) = TxtCode.Text
+
+                recieptform.Show()
+                Me.Hide()
+            End If
         End If
     End Sub
 
