@@ -199,7 +199,9 @@ Public Class Form1
                 recieptform.Show()
                 Me.Hide()
             End If
+
         ElseIf delivery = True Then
+
             If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Or TrimmedTxtAddress = "" Or TrimmedTxtcity = "" Or TrimmedTxtSuburb = "" Or TrimmedTxtCode = "" Then
                 MessageBox.Show("please input all customer and delivery details")
 
@@ -217,9 +219,5 @@ Public Class Form1
                 Me.Hide()
             End If
         End If
-    End Sub
-
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
-
     End Sub
 End Class

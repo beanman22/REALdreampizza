@@ -58,7 +58,9 @@ Partial Class recieptform
         Me.LblReceipt.Name = "LblReceipt"
         Me.LblReceipt.Size = New System.Drawing.Size(419, 827)
         Me.LblReceipt.TabIndex = 3
-        Me.LblReceipt.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'PrintDocument1
+        '
         '
         'PrintPreviewDialog1
         '
