@@ -169,7 +169,7 @@ Public Class Form1
         Dim TrimmedTxtcity As String
         Dim TrimmedTxtSuburb As String
         Dim TrimmedTxtCode As String
-
+        'declares trimmed variables for details
         TrimmedTxtLname = TxtLname.Text.Trim
         TrimmedTxtFname = TxtFname.Text.Trim
         TrimmedTxtMobile = TxtFname.Text.Trim
@@ -177,11 +177,11 @@ Public Class Form1
         TrimmedTxtcity = TxtFname.Text.Trim
         TrimmedTxtSuburb = TxtFname.Text.Trim
         TrimmedTxtCode = TxtFname.Text.Trim
+        'roemoves spaces
 
-
-        If delivery = False Then
-            If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Then
-                MessageBox.Show("please input full name and phone number")
+        If delivery = False Then 'checks if delivery is false
+            If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Then 'checks if detail boxes are empty
+                MessageBox.Show("please input full name and phone number") 'asks the user to input valid data
 
             ElseIf delivery = False Then
 
@@ -192,15 +192,15 @@ Public Class Form1
                 details(4) = TxtCity.Text
                 details(5) = TxtSuburb.Text
                 details(6) = TxtCode.Text
-
-                recieptform.Show()
-                Me.Hide()
+                'inputs data into the details array
+                recieptform.Show() 'shows recipt
+                Me.Hide() 'hides form1
             End If
 
-        ElseIf delivery = True Then
+        ElseIf delivery = True Then 'checks if delivery is true
 
             If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Or TrimmedTxtAddress = "" Or TrimmedTxtcity = "" Or TrimmedTxtSuburb = "" Or TrimmedTxtCode = "" Then
-                MessageBox.Show("please input all customer and delivery details")
+                MessageBox.Show("please input all customer and delivery details") 'asks user to input valid data
 
             ElseIf delivery = True Then
 
@@ -211,9 +211,9 @@ Public Class Form1
                 details(4) = TxtCity.Text
                 details(5) = TxtSuburb.Text
                 details(6) = TxtCode.Text
-
-                recieptform.Show()
-                Me.Hide()
+                'inputs data into the details array
+                recieptform.Show() 'shows recipt
+                Me.Hide() 'hides form1
             End If
         End If
     End Sub
