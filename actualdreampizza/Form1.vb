@@ -7,9 +7,6 @@ Imports System.Windows.Forms.DataFormats
 
 Public Class Form1
 
-    Const STANDARDPRICE As Decimal = 7.5 'declares the price of a standard pizza
-    Const GOURMETPRICE As Decimal = 14.5 'declares the price of a gourmet pizza
-
     Public total As Decimal = 0 'declares variable for the total cost of all pizzas
     Public delivery As Boolean 'declares variable for the delivery option
 
@@ -40,7 +37,7 @@ Public Class Form1
         Next
 
 
-        Dim NamesArray(names.Length - 1) As String   'outputs each line from pizzaprices.txt and stores it in the prices array
+        Dim NamesArray(names.Length - 1) As String   'outputs each line from pizzanames.txt and stores it in the names array
         For i As Integer = 0 To names.Length - 1
             NamesArray(i) = names(i)
         Next

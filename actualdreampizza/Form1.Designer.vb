@@ -112,7 +112,7 @@ Partial Class Form1
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.TxtInstructions = New System.Windows.Forms.RichTextBox()
         CType(Me.NudQty12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NudQty10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1101,13 +1101,13 @@ Partial Class Form1
         Me.Label1.TabIndex = 158
         Me.Label1.Text = "special order instructions"
         '
-        'RichTextBox1
+        'TxtInstructions
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(513, 791)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(377, 95)
-        Me.RichTextBox1.TabIndex = 157
-        Me.RichTextBox1.Text = ""
+        Me.TxtInstructions.Location = New System.Drawing.Point(513, 791)
+        Me.TxtInstructions.Name = "TxtInstructions"
+        Me.TxtInstructions.Size = New System.Drawing.Size(377, 95)
+        Me.TxtInstructions.TabIndex = 157
+        Me.TxtInstructions.Text = ""
         '
         'Form1
         '
@@ -1116,7 +1116,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1165, 900)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.TxtInstructions)
         Me.Controls.Add(Me.TxtMobile)
         Me.Controls.Add(Me.NudQty7)
         Me.Controls.Add(Me.LblSubtotal7)
@@ -1316,5 +1316,5 @@ Partial Class Form1
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents TxtInstructions As RichTextBox
 End Class
