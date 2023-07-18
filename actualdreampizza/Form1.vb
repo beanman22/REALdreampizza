@@ -172,49 +172,52 @@ Public Class Form1
         'declares trimmed variables for details
         TrimmedTxtLname = TxtLname.Text.Trim
         TrimmedTxtFname = TxtFname.Text.Trim
-        TrimmedTxtMobile = TxtFname.Text.Trim
-        TrimmedTxtAddress = TxtFname.Text.Trim
-        TrimmedTxtcity = TxtFname.Text.Trim
-        TrimmedTxtSuburb = TxtFname.Text.Trim
-        TrimmedTxtCode = TxtFname.Text.Trim
+        TrimmedTxtMobile = TxtMobile.Text.Trim
+        TrimmedTxtAddress = TxtAddress.Text.Trim
+        TrimmedTxtcity = TxtCity.Text.Trim
+        TrimmedTxtSuburb = TxtSuburb.Text.Trim
+        TrimmedTxtCode = TxtCode.Text.Trim
         'roemoves spaces
 
-        If delivery = False Then 'checks if delivery is false
-            If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Then 'checks if detail boxes are empty
-                MessageBox.Show("please input full name and phone number") 'asks the user to input valid data
+        If total > 3 Then 'checks if total is greater than 3
+            If delivery = False Then 'checks if delivery is false
+                If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Then 'checks if detail boxes are empty
+                    MessageBox.Show("please input full name and phone number") 'asks the user to input valid data
 
-            ElseIf delivery = False Then
+                ElseIf delivery = False Then
 
-                details(0) = TxtFname.Text
-                details(1) = TxtLname.Text
-                details(2) = TxtMobile.Text
-                details(3) = TxtAddress.Text
-                details(4) = TxtCity.Text
-                details(5) = TxtSuburb.Text
-                details(6) = TxtCode.Text
-                'inputs data into the details array
-                recieptform.Show() 'shows recipt
-                Me.Hide() 'hides form1
+                    details(0) = TxtFname.Text
+                    details(1) = TxtLname.Text
+                    details(2) = TxtMobile.Text
+                    details(3) = TxtAddress.Text
+                    details(4) = TxtCity.Text
+                    details(5) = TxtSuburb.Text
+                    details(6) = TxtCode.Text
+                    'inputs data into the details array
+                    recieptform.Show() 'shows recipt
+                    Me.Hide() 'hides form1
+                End If
+
+            ElseIf delivery = True Then 'checks if delivery is true
+
+                If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Or TrimmedTxtAddress = "" Or TrimmedTxtcity = "" Or TrimmedTxtSuburb = "" Or TrimmedTxtCode = "" Then
+                    MessageBox.Show("please input all customer and delivery details") 'asks user to input valid data
+
+                ElseIf delivery = True Then
+
+                    details(0) = TxtFname.Text
+                    details(1) = TxtLname.Text
+                    details(2) = TxtMobile.Text
+                    details(3) = TxtAddress.Text
+                    details(4) = TxtCity.Text
+                    details(5) = TxtSuburb.Text
+                    details(6) = TxtCode.Text
+                    'inputs data into the details array
+                    recieptform.Show() 'shows recipt
+                    Me.Hide() 'hides form1
+                End If
             End If
-
-        ElseIf delivery = True Then 'checks if delivery is true
-
-            If TrimmedTxtFname = "" Or TrimmedTxtLname = "" Or TrimmedTxtMobile = "" Or TrimmedTxtAddress = "" Or TrimmedTxtcity = "" Or TrimmedTxtSuburb = "" Or TrimmedTxtCode = "" Then
-                MessageBox.Show("please input all customer and delivery details") 'asks user to input valid data
-
-            ElseIf delivery = True Then
-
-                details(0) = TxtFname.Text
-                details(1) = TxtLname.Text
-                details(2) = TxtMobile.Text
-                details(3) = TxtAddress.Text
-                details(4) = TxtCity.Text
-                details(5) = TxtSuburb.Text
-                details(6) = TxtCode.Text
-                'inputs data into the details array
-                recieptform.Show() 'shows recipt
-                Me.Hide() 'hides form1
-            End If
+        Else MessageBox.Show("please select at least one menu item") 'asks user to input valid data
         End If
     End Sub
 End Class
