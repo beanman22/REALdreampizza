@@ -70,4 +70,14 @@ Public Class recieptform
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         e.Graphics.DrawString(LblReceipt.Text, New Font("Lucida Console", 12, FontStyle.Regular), Brushes.Black, 20, 20) 'adds recipt to the print form
     End Sub
+
+    Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click
+        'displays a messagebox asking if the user wants to quit the program, with two dialoge options, If the user choses no nothing happens, if the user choses yes the application closes.
+        If MessageBox.Show("Are you sure you want" + vbCrLf + "to exit the program?" + vbCrLf + "changes will not be saved", "Exit Program", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Application.Exit()
+        End If
+    End Sub
+    Private Sub BtnReset_Click(sender As Object, e As EventArgs) Handles BtnReset.Click
+        Application.Restart()
+    End Sub
 End Class

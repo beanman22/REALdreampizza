@@ -29,6 +29,7 @@ Partial Class recieptform
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.BtnReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnCancel
@@ -44,7 +45,7 @@ Partial Class recieptform
         'BtnYes
         '
         Me.BtnYes.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.BtnYes.Location = New System.Drawing.Point(123, 843)
+        Me.BtnYes.Location = New System.Drawing.Point(234, 843)
         Me.BtnYes.Name = "BtnYes"
         Me.BtnYes.Size = New System.Drawing.Size(111, 44)
         Me.BtnYes.TabIndex = 2
@@ -76,11 +77,22 @@ Partial Class recieptform
         '
         Me.PrintDialog1.UseEXDialog = True
         '
+        'BtnReset
+        '
+        Me.BtnReset.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.BtnReset.Location = New System.Drawing.Point(123, 843)
+        Me.BtnReset.Name = "BtnReset"
+        Me.BtnReset.Size = New System.Drawing.Size(105, 44)
+        Me.BtnReset.TabIndex = 4
+        Me.BtnReset.Text = "New order?"
+        Me.BtnReset.UseVisualStyleBackColor = False
+        '
         'recieptform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(440, 892)
+        Me.Controls.Add(Me.BtnReset)
         Me.Controls.Add(Me.LblReceipt)
         Me.Controls.Add(Me.BtnYes)
         Me.Controls.Add(Me.BtnCancel)
@@ -95,4 +107,5 @@ Partial Class recieptform
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PrintDialog1 As PrintDialog
+    Friend WithEvents BtnReset As Button
 End Class
