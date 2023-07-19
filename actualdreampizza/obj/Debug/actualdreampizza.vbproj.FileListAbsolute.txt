@@ -1,0 +1,15 @@
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\bin\Debug\actualdreampizza.exe.config
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\bin\Debug\actualdreampizza.exe
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\bin\Debug\actualdreampizza.pdb
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\bin\Debug\actualdreampizza.xml
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.vbproj.AssemblyReference.cache
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.vbproj.SuggestedBindingRedirects.cache
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.Form1.resources
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.LoginForm1.resources
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.Resources.resources
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.recieptform.resources
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.vbproj.GenerateResource.cache
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.vbproj.CoreCompileInputs.cache
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.exe
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.xml
+C:\Users\21181\Source\Repos\finalcode\actualdreampizza\obj\Debug\actualdreampizza.pdb
